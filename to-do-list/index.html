@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/style.css">
+</head>
+<body>
+    <!-- TEMPLATE -->
+    <template id="list_item">
+        <div class="list_wrapper f-between">
+            <input type="checkbox" class="item_check" name="item_check">
+            <div class="item_name"></div>
+            <div class="gap">
+                <button class="cta edit">editer</button>
+                <button class="cta delete warn">suprimer</button>
+            </div>
+        </div>
+    </template>
+    <!-- // -->
+    <div class="toDoList">
+        <h1>Ma TODO list</h1>
+        <my-list></my-list>
+    </div>
+    <script src="./src/component.js" type="module"></script>
+</body>
+</html>
